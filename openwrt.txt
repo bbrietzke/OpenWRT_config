@@ -1,0 +1,35 @@
+
+make image PROFILE="tplink_archer-a7-v5" \
+PACKAGES="luci-proto-relay relayd luci \
+kmod-usb-net-rndis kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-eem \
+kmod-usb-net-cdc-ether kmod-usb-net-cdc-subset kmod-nls-base kmod-usb-core kmod-usb-net kmod-usb-net-cdc-ether kmod-usb2 \
+kmod-usb-net-ipheth usbmuxd libimobiledevice usbutils"
+
+make image PROFILE="rpi-3" \
+PACKAGES="luci-proto-relay relayd luci \
+kmod-usb-net-rndis kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-eem \
+kmod-usb-net-cdc-ether kmod-usb-net-cdc-subset kmod-nls-base kmod-usb-core kmod-usb-net kmod-usb-net-cdc-ether kmod-usb2 \
+kmod-usb-net-ipheth usbmuxd libimobiledevice usbutils \
+mosquitto-nossl mosquitto-client-nossl luci-app-mosquitto \
+redis-server redis-cli redis-utils \
+squid luci-app-squid squid-mod-cachemgr" \
+FILES="config_files"
+
+
+rm -rf ~/Downloads/bcm2710 && \
+scp -r ubuntu@lavender.local:/home/ubuntu/openwrt/openwrt-imagebuilder-22.03.3-bcm27xx-bcm2710.Linux-x86_64/bin/targets/bcm27xx/bcm2710 ~/Downloads
+
+
+
+
+scp -Or root@192.168.1.1:/etc/config ./etc/config
+scp -rO config_files ubuntu@lavender.local:/home/ubuntu/openwrt/openwrt-imagebuilder-22.03.3-bcm27xx-bcm2710.Linux-x86_64
+
+
+
+
+
+
+
+
+
