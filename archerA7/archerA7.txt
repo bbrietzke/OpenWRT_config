@@ -1,7 +1,7 @@
 
-wget https://downloads.openwrt.org/releases/22.03.3/targets/ath79/generic/openwrt-imagebuilder-22.03.3-ath79-generic.Linux-x86_64.tar.xz && \
-tar -Jxf openwrt-imagebuilder-22.03.3-ath79-generic.Linux-x86_64.tar.xz && \
-mv openwrt-imagebuilder-22.03.3-ath79-generic.Linux-x86_64 archerA7
+wget https://downloads.openwrt.org/releases/22.03.4/targets/ath79/generic/openwrt-imagebuilder-22.03.4-ath79-generic.Linux-x86_64.tar.xz && \
+tar -Jxf openwrt-imagebuilder-22.03.4-ath79-generic.Linux-x86_64.tar.xz && \
+mv openwrt-imagebuilder-22.03.4-ath79-generic.Linux-x86_64 archerA7
 
 
 

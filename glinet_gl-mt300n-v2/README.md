@@ -4,22 +4,39 @@
 
 ## Acquire OpenWRT Firmware
 ```
-wget https://downloads.openwrt.org/releases/22.03.3/targets/ramips/mt76x8/openwrt-imagebuilder-22.03.3-ramips-mt76x8.Linux-x86_64.tar.xz
-tar -Jxf openwrt-imagebuilder-22.03.3-ramips-mt76x8.Linux-x86_64.tar.xz && \
-mv openwrt-imagebuilder-22.03.3-ramips-mt76x8.Linux-x86_64 mt76x8 && \
+wget https://downloads.openwrt.org/releases/22.03.4/targets/ramips/mt76x8/openwrt-imagebuilder-22.03.4-ramips-mt76x8.Linux-x86_64.tar.xz
+tar -Jxf openwrt-imagebuilder-22.03.4-ramips-mt76x8.Linux-x86_64.tar.xz && \
+mv openwrt-imagebuilder-22.03.4-ramips-mt76x8.Linux-x86_64 mt76x8 && \
 cd mt76x8
 ```
 
-## Make Firmware Image
+## Empty Firmware Image
 ```
 make image PROFILE='glinet_gl-mt300n-v2' \
 PACKAGES='luci'
 FILES=''
 ```
 
+## Wireless Bridge Image
+```
+scp -r glinet_gl-mt300n-v2/config_bridge/ ubuntu@catnip.lan:/home/ubuntu/openwrt/mt76x8/config
+```
+```
+make image PROFILE='glinet_gl-mt300n-v2' \
+PACKAGES='luci \
+prometheus-node-exporter-lua prometheus-node-exporter-lua-openwrt \
+prometheus-node-exporter-lua-netstat prometheus-node-exporter-lua-nat_traffic \
+prometheus-node-exporter-lua-wifi prometheus-node-exporter-lua-wifi_stations \
+luci-proto-relay relayd \
+etherwake wakeonlan luci-app-wol'
+FILES='config'
+```
+
 ## Copy image for Distribution
 ```
 export SERVERNAME=basil.lan && \
 rm -rf ~/Downloads/mt76x8 && \
-scp -r ubuntu@$SERVERNAME:/home/ubuntu/openwrt/mt76x8/bin/targets/ramips/mt76x8 ~/Downloads
+scp -r ubuntu@catnip.lan:/home/ubuntu/openwrt/mt76x8/bin/targets/ramips/mt76x8 ~/Downloads
 ```
+
+
