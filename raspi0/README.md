@@ -16,7 +16,7 @@ make image PROFILE='rpi' \
 PACKAGES='luci luci-proto-relay relayd \
 usb-modeswitch kmod-mii kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm  \
 kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-wdm kmod-usb-net-qmi-wwan kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-ipheth  \
-usbmuxd libimobiledevice uqmi wwan umbim comgt comgt-ncm \
+usbmuxd libimobiledevice uqmi wwan umbim comgt comgt-ncm kmod-usb-net-rtl8152 \
 kmod-usb-serial-option kmod-usb-serial kmod-usb-serial-wwan usbutils'
 FILES=''
 ```
