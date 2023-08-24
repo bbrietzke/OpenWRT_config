@@ -19,7 +19,7 @@ kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-wdm kmod-usb-net-qmi-wwan kmod
 usbmuxd libimobiledevice uqmi wwan umbim comgt comgt-ncm kmod-usb-net-rtl8152 \
 kmod-usb-serial-option kmod-usb-serial kmod-usb-serial-wwan usbutils \
 kmod-usb-storage kmod-usb-storage-uas'
-FILES='config'
+FILES=''
 ```
 
 ## Make ASTERISK PBX Server
