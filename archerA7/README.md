@@ -21,7 +21,7 @@ kmod-usb-net-ipheth usbmuxd libimobiledevice usbutils \
 prometheus-node-exporter-lua prometheus-node-exporter-lua-openwrt prometheus-node-exporter-lua-netstat \
 prometheus-node-exporter-lua-nat_traffic prometheus-node-exporter-lua-wifi prometheus-node-exporter-lua-wifi_stations \
 adblock luci-app-adblock"
-FILES="archerA7_config"
+FILES="files"
 ```
 
 ```
