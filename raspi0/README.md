@@ -37,3 +37,5 @@ FILES='files'
 rm -rf ~/Downloads/bcm2708 && \
 scp -r titan:/home/bbrietzke/OpenWRT_config/raspi0/raspi0/bin/targets/bcm27xx/bcm2708 ~/Downloads
 ```
+
+https://downloads.openwrt.org/releases/22.03.5/targets/bcm27xx/bcm2708/openwrt-22.03.5-bcm27xx-bcm2708-rpi-ext4-factory.img.gz
