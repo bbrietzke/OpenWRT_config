@@ -15,11 +15,11 @@ cd raspi0
 make image PROFILE='rpi' \
 PACKAGES='luci luci-proto-relay relayd \
 usb-modeswitch kmod-mii kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm  \
-kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-wdm kmod-usb-net-qmi-wwan kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-ipheth  \
+kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-wdm kmod-usb-net-qmi-wwan kmod-usb-net-asix kmod-usb-net-ipheth  \
 usbmuxd libimobiledevice uqmi wwan umbim comgt comgt-ncm kmod-usb-net-rtl8152 \
 kmod-usb-serial-option kmod-usb-serial kmod-usb-serial-wwan usbutils \
 kmod-usb-storage kmod-usb-storage-uas'
-FILES=''
+FILES='files'
 ```
 
 ## Make ASTERISK PBX Server
@@ -28,7 +28,7 @@ make image PROFILE='rpi' \
 PACKAGES='luci kmod-usb-net-asix-ax88179 \
 asterisk asterisk-pjsip asterisk-bridge-simple asterisk-codec-alaw asterisk-codec-ulaw asterisk-res-rtp-asterisk \
 asterisk-app-sms asterisk-res-ari' \
-FILES='config'
+FILES='files'
 ```
 
 
