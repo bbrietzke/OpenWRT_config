@@ -6,7 +6,7 @@
 wget https://downloads.openwrt.org/releases/22.03.5/targets/bcm27xx/bcm2708/openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
 tar -Jxf openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
 rm openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
-mv openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64 raspi0 && \
+mv openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64/{.,}* raspi0 && \
 cd raspi0
 ```
 
