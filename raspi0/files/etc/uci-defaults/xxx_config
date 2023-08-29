@@ -1,6 +1,8 @@
 uci set wireless.@wifi-device[0].disabled="0"
+uci set wireless.@wifi-device[1].disabled="0"
 uci set wireless.@wifi-iface[0].disabled="0"
-uci set wireless.@wifi-iface[0].ssid="OpenWrt"
-uci set wireless.@wifi-iface[0].key="password"
+uci set wireless.@wifi-iface[0].ssid="BH-Network"
+uci set wireless.@wifi-iface[0].key="Sli07ih01"
+uci set wireless.@wifi-iface[0].mode="sta"
 uci set wireless.@wifi-iface[0].encryption="psk2"
 uci commit wireless
