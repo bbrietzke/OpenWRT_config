@@ -22,16 +22,6 @@ kmod-usb-storage kmod-usb-storage-uas' \
 FILES='files'
 ```
 
-## Make ASTERISK PBX Server
-```
-make image PROFILE='rpi' \
-PACKAGES='luci kmod-usb-net-asix-ax88179 \
-asterisk asterisk-pjsip asterisk-bridge-simple asterisk-codec-alaw asterisk-codec-ulaw asterisk-res-rtp-asterisk \
-asterisk-app-sms asterisk-res-ari' \
-FILES='files'
-```
-
-
 ## Download to local machine
 ```
 rm -rf ~/Downloads/bcm2708 && \

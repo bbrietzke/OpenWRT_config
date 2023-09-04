@@ -1,4 +1,3 @@
-
 config interface 'loopback'
 	option device 'lo'
 	option proto 'static'
@@ -6,26 +5,29 @@ config interface 'loopback'
 	option netmask '255.0.0.0'
 
 config globals 'globals'
-	option ula_prefix 'fdc5:747b:3337::/48'
+	option ula_prefix 'fd1d:b917:3b0b::/48'
 
 config device
 	option name 'br-lan'
 	option type 'bridge'
-	list ports 'eth0'
+	list ports 'wlan0'
 
 config interface 'lan'
-	option device 'br-lan'
+	option device 'eth0'
 	option proto 'static'
+	option ipaddr '192.168.253.1'
 	option netmask '255.255.255.0'
-	option ip6assign '60'
-	option ipaddr '192.168.254.1'
 
 config interface 'wwan'
-	option proto 'dhcp'
+	option proto 'static'
+	option ipaddr '192.168.1.3'
+	option netmask '255.255.255.0'
+	option gateway '192.168.1.1'
+	option broadcast '192.168.1.255'
+	list dns '192.168.1.1'
 
-config interface 'bridge'
+config interface 'wireless_bridge'
 	option proto 'relay'
-	option ipaddr '192.168.1.137'
+	option ipaddr '192.168.1.3'
 	list network 'lan'
 	list network 'wwan'
-
