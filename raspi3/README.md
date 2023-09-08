@@ -13,7 +13,7 @@ cd raspi3
 ## Make Firmware Image
 ```
 make image PROFILE='rpi-3' \
-PACKAGES='luci luci-proto-relay relayd' \
+PACKAGES='luci luci-proto-relay relayd memcached' \
 FILES='files'
 ```
 
