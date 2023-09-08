@@ -19,5 +19,5 @@ FILES='files'
 
 ```
 rm -rf ~/Downloads/bcm2710 && \
-scp -r bbrietzke@titan:/home/bbrietzke/openwrt/raspi3/bin/targets/bcm27xx/bcm2710 ~/Downloads
+scp -r bbrietzke@triton:/home/bbrietzke/OpenWRT_config/raspi3/bin/targets/bcm27xx/bcm2710 ~/Downloads
 ```
