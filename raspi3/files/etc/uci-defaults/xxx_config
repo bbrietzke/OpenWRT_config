@@ -1,9 +1,6 @@
 uci set wireless.@wifi-device[0].disabled="0"
 uci set wireless.@wifi-device[0].country="US"
 
-uci set wireless.@wifi-device[1].disabled="0"
-uci set wireless.@wifi-device[1].country="US"
-
 uci set wireless.@wifi-iface[0].disabled="0"
 uci set wireless.@wifi-iface[0].ssid="BH-Network"
 uci set wireless.@wifi-iface[0].key="Sli07ih01!"
