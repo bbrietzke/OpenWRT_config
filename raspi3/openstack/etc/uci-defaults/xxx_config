@@ -8,7 +8,7 @@ uci set wireless.@wifi-iface[0].mode="sta"
 uci set wireless.@wifi-iface[0].encryption="psk2"
 uci commit wireless
 
-uci set network.lan.ipaddr="192.168.2.1"
+uci set network.lan.ipaddr="192.168.5.1"
 uci commit network
 
 uci set system.@system[0].hostname=beige

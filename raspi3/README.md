@@ -10,11 +10,11 @@ mv openwrt-imagebuilder-22.03.5-bcm27xx-bcm2710.Linux-x86_64/{.,}* raspi3  && \
 cd raspi3
 ```
 
-## Make Firmware Image
+## Make Firmware Image for Openstack Router
 ```
 make image PROFILE='rpi-3' \
-PACKAGES='luci luci-proto-relay relayd memcached' \
-FILES='files'
+PACKAGES='luci luci-proto-relay relayd memcached haproxy' \
+FILES='openstack'
 ```
 
 ```
