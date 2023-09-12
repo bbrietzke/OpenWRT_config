@@ -6,15 +6,17 @@ uci set wireless.@wifi-iface[0].ssid="BH-Network"
 uci set wireless.@wifi-iface[0].key="Sli07ih01!"
 uci set wireless.@wifi-iface[0].mode="sta"
 uci set wireless.@wifi-iface[0].encryption="psk2"
+uci set wireless.@wifi-iface[0].ipaddr="10.0.0.2"
+uci set wireless.@wifi-iface[0].netmask="255.255.255.128"
 uci commit wireless
 
-uci set network.lan.ipaddr="192.168.0.129"
+uci set network.lan.ipaddr="10.0.0.129"
 uci set network.lan.netmask="255.255.255.128"
 uci commit network
 
-uci set dhcp.lan.start="192"
+uci set dhcp.lan.start="190"
 uci set dhcp.lan.limit="64"
-uci set dhcp.lan.leasetime="1h"
+uci set dhcp.lan.leasetime="24h"
 uci commit dhcp
 
 uci set system.@system[0].hostname=beige
