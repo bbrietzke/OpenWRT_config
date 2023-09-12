@@ -8,11 +8,14 @@ uci set wireless.@wifi-iface[0].mode="sta"
 uci set wireless.@wifi-iface[0].encryption="psk2"
 uci commit wireless
 
-uci set network.lan.ipaddr="192.168.5.1"
+uci set network.lan.ipaddr="192.168.0.129"
+uci set network.lan.netmask="255.255.255.128"
 uci commit network
+
+uci set dhcp.lan.start="192"
+uci set dhcp.lan.limit="64"
+uci set dhcp.lan.leasetime="1h"
+uci commit dhcp
 
 uci set system.@system[0].hostname=beige
 uci commit system
-
-uci set memcached.@memcached.memory=256
-uci commit memcached
