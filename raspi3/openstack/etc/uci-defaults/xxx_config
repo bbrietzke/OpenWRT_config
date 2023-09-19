@@ -19,5 +19,5 @@ uci set dhcp.lan.limit="64"
 uci set dhcp.lan.leasetime="24h"
 uci commit dhcp
 
-uci set system.@system[0].hostname=beige
+uci set system.@system[0].hostname=io
 uci commit system
