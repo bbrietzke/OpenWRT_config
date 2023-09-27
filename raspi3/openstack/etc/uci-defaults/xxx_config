@@ -21,3 +21,13 @@ uci commit dhcp
 
 uci set system.@system[0].hostname=io
 uci commit system
+
+uci set firewall.@defaults[0].input='ACCEPT'
+uci set firewall.@defaults[0].output='ACCEPT'
+uci set firewall.@defaults[0].synflood_protect='1'
+uci set firewall.@defaults[0].forward='ACCEPT'
+uci set firewall.@forwarding[0].src='lan'
+uci set firewall.@forwarding[0].dest='wan'
+uci set firewall.@forwarding[1].src='wan'
+uci set firewall.@forwarding[1].dest='lan'
+uci commit firewall

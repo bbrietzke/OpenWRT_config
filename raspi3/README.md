@@ -13,8 +13,16 @@ cd raspi3
 ## Make Firmware Image for Openstack Router
 ```
 make image PROFILE='rpi-3' \
-PACKAGES='luci luci-proto-relay relayd memcached haproxy' \
+PACKAGES='luci luci-proto-relay relayd ' \ 
+'memcached haproxy' \
 FILES='openstack'
+```
+
+## Default Firmware
+```
+make image PROFILE='rpi-3' \
+PACKAGES='luci luci-proto-relay' \
+FILES='default'
 ```
 
 ```
