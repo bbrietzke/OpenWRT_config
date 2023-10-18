@@ -3,10 +3,10 @@
 
 ## Acquire OpenWRT Firmware
 ```
-wget https://downloads.openwrt.org/releases/22.03.5/targets/bcm27xx/bcm2708/openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
-tar -Jxf openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
-rm openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
-mv openwrt-imagebuilder-22.03.5-bcm27xx-bcm2708.Linux-x86_64/{.,}* raspi0 && \
+wget https://downloads.openwrt.org/releases/23.05.0/targets/bcm27xx/bcm2708/openwrt-imagebuilder-23.05.0-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
+tar -Jxf openwrt-imagebuilder-23.05.0-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
+rm openwrt-imagebuilder-23.05.0-bcm27xx-bcm2708.Linux-x86_64.tar.xz && \
+mv openwrt-imagebuilder-23.05.0-bcm27xx-bcm2708.Linux-x86_64/{.,}* raspi0 && \
 cd raspi0
 ```
 
@@ -28,4 +28,4 @@ rm -rf ~/Downloads/bcm2708 && \
 scp -r larissa:/home/bbrietzke/OpenWRT_config/raspi0/bin/targets/bcm27xx/bcm2708 ~/Downloads
 ```
 
-https://downloads.openwrt.org/releases/22.03.5/targets/bcm27xx/bcm2708/openwrt-22.03.5-bcm27xx-bcm2708-rpi-ext4-factory.img.gz
+https://downloads.openwrt.org/releases/23.05.0/targets/bcm27xx/bcm2708/openwrt-23.05.0-bcm27xx-bcm2708-rpi-ext4-factory.img.gz
