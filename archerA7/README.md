@@ -3,10 +3,10 @@
 
 ## Acquire OpenWRT Firmware
 ```
-wget https://downloads.openwrt.org/releases/23.05.0/targets/ath79/generic/openwrt-imagebuilder-23.05.0-ath79-generic.Linux-x86_64.tar.xz && \
-tar -Jxf openwrt-imagebuilder-23.05.0-ath79-generic.Linux-x86_64.tar.xz && \
-rm openwrt-imagebuilder-23.05.0-ath79-generic.Linux-x86_64.tar.xz && \
-mv openwrt-imagebuilder-23.05.0-ath79-generic.Linux-x86_64/{.,}* archerA7 && \
+wget https://downloads.openwrt.org/releases/23.05.2/targets/ath79/generic/openwrt-imagebuilder-23.05.2-ath79-generic.Linux-x86_64.tar.xz && \
+tar -Jxf openwrt-imagebuilder-23.05.2-ath79-generic.Linux-x86_64.tar.xz && \
+rm openwrt-imagebuilder-23.05.2-ath79-generic.Linux-x86_64.tar.xz && \
+mv openwrt-imagebuilder-23.05.2-ath79-generic.Linux-x86_64/{.,}* archerA7 && \
 cd archerA7
 ```
 

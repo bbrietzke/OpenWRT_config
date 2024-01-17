@@ -4,10 +4,10 @@
 
 ## Acquire OpenWRT Firmware
 ```
-wget https://downloads.openwrt.org/releases/23.05.0/targets/ramips/mt76x8/openwrt-imagebuilder-23.05.0-ramips-mt76x8.Linux-x86_64.tar.xz
-tar -Jxf openwrt-imagebuilder-23.05.0-ramips-mt76x8.Linux-x86_64.tar.xz && \
-rm openwrt-imagebuilder-23.05.0-ramips-mt76x8.Linux-x86_64.tar.xz && \
-mv openwrt-imagebuilder-23.05.0-ramips-mt76x8.Linux-x86_64 mt76x8 && \
+wget https://downloads.openwrt.org/releases/23.05.2/targets/ramips/mt76x8/openwrt-imagebuilder-23.05.2-ramips-mt76x8.Linux-x86_64.tar.xz
+tar -Jxf openwrt-imagebuilder-23.05.2-ramips-mt76x8.Linux-x86_64.tar.xz && \
+rm openwrt-imagebuilder-23.05.2-ramips-mt76x8.Linux-x86_64.tar.xz && \
+mv openwrt-imagebuilder-23.05.2-ramips-mt76x8.Linux-x86_64 mt76x8 && \
 cd mt76x8
 ```
 
