@@ -15,17 +15,17 @@ cd raspi3
 make image PROFILE='rpi-3' \
 PACKAGES='luci luci-proto-relay relayd ' \ 
 'memcached haproxy mosquitto-nossl' \
-FILES='openstack'
+FILES='files'
 ```
 
 ## Default Firmware
 ```
 make image PROFILE='rpi-3' \
-PACKAGES='luci luci-proto-relay' \
-FILES='default'
+PACKAGES='luci luci-proto-relay relayd' \
+FILES='files'
 ```
 
 ```
 rm -rf ~/Downloads/bcm2710 && \
-scp -r bbrietzke@triton:/home/bbrietzke/OpenWRT_config/raspi3/bin/targets/bcm27xx/bcm2710 ~/Downloads
+scp -r bbrietzke@10.0.0.242:/home/bbrietzke/OpenWRT_config/raspi3/bin/targets/bcm27xx/bcm2710 ~/Downloads
 ```

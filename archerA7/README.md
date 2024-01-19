@@ -19,4 +19,5 @@ FILES="files"
 
 ```
 rm -rf ~/Downloads/generic && \
-scp -r bbrietzke@titan.local:/home/bbrietzke/openwrt/archerA7/bin/targets/ath79/generic ~/Downloads
+scp -r bbrietzke@10.0.0.242:/home/bbrietzke/OpenWRT_config/archerA7/bin/targets/ath79/generic ~/Downloads
+```
