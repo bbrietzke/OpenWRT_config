@@ -11,5 +11,19 @@ uci set dhcp.lan.limit="64"
 uci set dhcp.lan.leasetime="48h"
 uci commit dhcp
 
+uci add dhcp host
+uci set dhcp.@host[-1].name="io"
+uci set dhcp.@host[-1].dns='1'
+uci set dhcp.@host[-1].mac="B8:27:EB:A9:C0:49"
+uci set dhcp.@host[-1].ip="10.0.0.2"
+uci commit dhcp
+
+uci add dhcp host
+uci set dhcp.@host[-1].name="homeassistant"
+uci set dhcp.@host[-1].dns='1'
+uci set dhcp.@host[-1].mac="DC:A6:32:64:AB:59"
+uci set dhcp.@host[-1].ip="10.0.0.9"
+uci commit dhcp
+
 uci set system.@system[0].hostname=sol
 uci commit system
