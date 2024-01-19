@@ -16,7 +16,7 @@ uci commit network
 
 uci set dhcp.lan.start="190"
 uci set dhcp.lan.limit="64"
-uci set dhcp.lan.leasetime="24h"
+uci set dhcp.lan.leasetime="48h"
 uci commit dhcp
 
 uci set system.@system[0].hostname=io
